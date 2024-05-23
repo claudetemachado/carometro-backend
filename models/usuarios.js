@@ -1,7 +1,7 @@
 //models/Usuario.js
 
 const Sequelize = require('sequelize');
-const Sequelize = require('../config/sequelize');
+const sequelize = require('../config/sequelize');
 
 const Usuario = sequelize.define('Usuarios',{
         //define as informaçoes da tabela colunas
@@ -22,8 +22,8 @@ const Usuario = sequelize.define('Usuarios',{
     bairro: Sequelize.STRING,
     cidade: Sequelize.STRING,
     estado: Sequelize.STRING,
-    imagem: Sequelize.STRING,
-    Tipor_Usuarios_idTipos_Usuarios: Sequelize.NUMBER, 
+    foto: Sequelize.STRING,
+    Tipos_Usuarios_idTipos_Usuarios: Sequelize.NUMBER, 
 },
 {
     //precisa disso pq nao tem as colunas createdAt e updateAt no bd
